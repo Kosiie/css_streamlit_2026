@@ -104,13 +104,13 @@ elif menu == "Education":
 
     if data_option == "Formal Education":
         st.write("### Formal Education")
-        st.dataframe(relevant_education)
+        st.dataframe(relevant_education.reset_index(drop=True).rename_axis("No.").set_index(pd.RangeIndex(1, len(relevant_education)+1)))
         
 
     elif data_option == "Informal Education":
         st.write("### Informal Education")
-        st.dataframe(extracurricular_training)
-        
+        st.dataframe(extracurricular_training.reset_index(drop=True).rename_axis("No.").set_index(pd.RangeIndex(1, len(extracurricular_training)+1)))
+               
         
 
 elif menu == "Contact":
@@ -120,3 +120,4 @@ elif menu == "Contact":
     linkedin = "www.linkedin.com/in/kosiieoffojebe"
 
     st.write(f"##### You can reach me at {email} or send me a dm on {linkedin}")
+
