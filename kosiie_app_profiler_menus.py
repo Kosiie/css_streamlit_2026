@@ -46,7 +46,7 @@ if menu == "Researcher Profile":
     st.image("Kosiie Headshot.jpg", caption="Kosiie's Headshot")
     
     # Sidebar picture excerpts
-    st.sidebar.image("Research_Pic.jpg", caption="Poster Presentation")
+    st.sidebar.image("Research_Pic.JPG", caption="Poster Presentation")
     st.sidebar.image("Scii_Comm.jpg", caption="Science Communication")
     st.sidebar.image("Group_Photo.jpg", caption="Picture with Team")
 
@@ -118,4 +118,5 @@ elif menu == "Contact":
     st.header("Contact Information")
     email = "offojebekosi@gmail.com"
     linkedin = "www.linkedin.com/in/kosiieoffojebe"
+
     st.write(f"##### You can reach me at {email} or send me a dm on {linkedin}")
